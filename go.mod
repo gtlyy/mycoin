@@ -9,7 +9,7 @@ require (
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/stretchr/testify v1.8.2
 	golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37
-	mymariadb v0.0.0-00010101000000-000000000000
+	// mymariadb v0.0.0-00010101000000-000000000000
 )
 
 require (
@@ -22,8 +22,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace mytime => ../mytime
-
-replace myfun => ../myfun
-
-replace mymariadb => ../mymariadb
+// replace mytime => ../mytime
+// replace myfun => ../myfun
+// replace mymariadb => ../mymariadb
