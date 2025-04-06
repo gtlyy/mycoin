@@ -1,4 +1,4 @@
-module mycoin
+module github.com/gtlyy/mycoin
 
 go 1.19
 
