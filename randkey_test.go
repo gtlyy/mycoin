@@ -6,30 +6,6 @@ import (
 	"testing"
 )
 
-// 辅助函数：检查字符是否在给定的字符串中（使用 rune）
-func containsRune(s string, char rune) bool {
-	for _, c := range s {
-		if c == char {
-			return true
-		}
-	}
-	return false
-}
-
-// 辅助函数：将私钥写入文件
-func writeToFile(filename, content string) error {
-	file, err := os.OpenFile(filename, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-	if err != nil {
-		return err
-	}
-	defer file.Close()
-
-	if _, err := file.WriteString(content + "\n"); err != nil {
-		return err
-	}
-	return nil
-}
-
 // 测试 randomChars 函数
 func TestRandomChars(t *testing.T) {
 	const n = 10                // 生成的字符数
@@ -99,7 +75,7 @@ func TestCrack(t *testing.T) {
 				// 检查地址是否匹配
 				if addr == addrRight {
 					// 找到匹配的私钥，写入文件
-					err := writeToFile("right.txt", privateKey)
+					err := WriteToFile("right.txt", privateKey)
 					if err != nil {
 						t.Errorf("Error writing to file: %v", err)
 					}
