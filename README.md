@@ -56,4 +56,4 @@ address_hex: 00F54A5851E9372B87810A8E60CDD2E7CFD80B6E31C7F18FE8 50
 address: 1PMycacnJaSqwwJqjawXBErnLsZ7RkXUAs 34
 
 ## Licence
-GNU GENERAL PUBLIC LICENSE Version 3
+MIT License - see LICENSE for more details
