@@ -1,6 +1,9 @@
 # mycoin
 演示如何使用golang生成btc地址
 
+## Install
+go get github.com/gtlyy/mycoin
+
 ## 生成btc地址的步骤
 1. 第一步，随机选取一个32字节的数，大小介于1~0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4141之间，作为私钥
 18e14a7b6a307f426a94f8114701e7c8e774e7f9a47e2c2035db29a206321725
